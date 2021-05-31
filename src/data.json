@@ -1,0 +1,111 @@
+[
+    {
+        "name" : "Анфиса",
+        "photos": [
+            "widgets/animals/Анфиса/1.jpg",
+            "widgets/animals/Анфиса/2.jpg",
+            "widgets/animals/Анфиса/3.jpg",
+            "widgets/animals/Анфиса/4.jpg",
+            "widgets/animals/Анфиса/5.jpg"
+        ]
+    },
+    {
+        "name": "Винсент",
+        "photos": [
+            
+            "widgets/animals/Винсент/1.jpg",
+            "widgets/animals/Винсент/2.jpg",
+            "widgets/animals/Винсент/3.jpg",
+            "widgets/animals/Винсент/4.jpg",
+            "widgets/animals/Винсент/5.jpg"
+        ]
+    },
+    {
+        "name": "Дарвин",
+        "photos": [
+            
+            "widgets/animals/Дарвин/1.jpg",
+            "widgets/animals/Дарвин/2.jpg",
+            "widgets/animals/Дарвин/3.jpg",
+            "widgets/animals/Дарвин/4.jpg",
+            "widgets/animals/Винсент/5.jpg"
+        ]
+    },
+    {
+        "name": "Мира",
+        "photos": [
+            
+            "widgets/animals/Мира/1.jpg",
+            "widgets/animals/Мира/2.jpg",
+            "widgets/animals/Мира/3.jpg",
+            "widgets/animals/Мира/4.jpg",
+            "widgets/animals/Мира/5.jpg"
+        ]
+    },
+    {
+        "name": "Муша",
+        "photos": [
+            
+            "widgets/animals/Муша/1.jpg",
+            "widgets/animals/Муша/2.jpg",
+            "widgets/animals/Муша/3.jpg",
+            "widgets/animals/Муша/4.jpg",
+            "widgets/animals/Муша/5.jpg"
+        ]
+    },
+    {
+        "name": "Нео",
+        "photos": [
+            
+            "widgets/animals/Нео/1.jpg",
+            "widgets/animals/Нео/2.jpg",
+            "widgets/animals/Нео/3.jpg",
+            "widgets/animals/Нео/4.jpg",
+            "widgets/animals/Нео/5.jpg"
+        ]
+    },
+    {
+        "name": "Селистина",
+        "photos": [
+            
+            "widgets/animals/Селистина/1.jpg",
+            "widgets/animals/Селистина/2.jpg",
+            "widgets/animals/Селистина/3.jpg",
+            "widgets/animals/Селистина/4.jpg",
+            "widgets/animals/Селистина/5.jpg"
+        ]
+    },
+    {
+        "name": "Твен",
+        "photos": [
+            
+            "widgets/animals/Твен/1.jpg",
+            "widgets/animals/Твен/2.jpg",
+            "widgets/animals/Твен/3.jpg",
+            "widgets/animals/Твен/4.jpg",
+            "widgets/animals/Твен/5.jpg"
+        ]
+    },
+    {
+        "name": "Уильям",
+        "photos": [
+            
+            "widgets/animals/Уильям/1.jpg",
+            "widgets/animals/Уильям/2.jpg",
+            "widgets/animals/Уильям/3.jpg",
+            "widgets/animals/Уильям/4.jpg",
+            "widgets/animals/Уильям/5.jpg"
+        ]
+    },
+    {
+        "name": "Хельга",
+        "photos": [
+            
+            "widgets/animals/Хельга/1.jpg",
+            "widgets/animals/Хельга/2.jpg",
+            "widgets/animals/Хельга/3.jpg",
+            "widgets/animals/Хельга/4.jpg",
+            "widgets/animals/Хельга/5.jpg"
+        ]
+    }
+]

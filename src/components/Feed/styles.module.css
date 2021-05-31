@@ -1,0 +1,108 @@
+.instagramItems {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .instagramItem {
+    -webkit-box-flex: 0;
+    flex: 0 0 calc(100%/6 - 10px);
+    margin: 0px;
+    display: block;
+    position: relative;
+    /* border: 2px solid green; */
+
+  } 
+  .instagramImg {
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: .25s;
+    transition: .25s;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /* border: 5px solid hsl(172, 85%, 48%); */
+
+  }
+    /* The overlay effect - lays on top of the container and over the image */
+    .overlay {
+      /* border: 2px solid hsl(172, 85%, 48%); */
+      border-bottom: 5px;
+      position: absolute;
+      bottom: 0px;
+      background: rgb(0, 0, 0);
+      background: rgba(0, 0, 0, 0.8); 
+      color: #f1f1f1;
+      width: 100%;
+
+      transition: .5s ease;
+      color: white;
+      font-size: 2vw;
+      /* text-align: center; */
+    
+    }
+  .instagramIcon {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+    opacity: 0;
+  }
+  .instagramIcon:hover {
+    opacity: 1;
+    background-color: #00000061;
+  }
+  @media (max-width: 480px) {
+    
+    /* CSS */
+    .instagramItem{
+      flex: 0 0 calc(100%/2 - 10px);
+      margin: 5px;
+    }
+    
+  }
+  
+  @media (min-width: 481px) and (max-width: 1767px) {
+    
+    /* CSS */
+    .instagramItem {
+      flex: 0 0 calc(100%/3 - 10px);
+      margin: 5px;
+    }
+    
+  }
+
+  .errorMessage{
+    text-align: center;
+    color: red;
+    font-size: 18px;
+  }
+
+  /* .container {
+      border: 5px solid hsl(172, 85%, 48%);
+
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+  } */
+  
+  /* Make the image to responsive */
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
