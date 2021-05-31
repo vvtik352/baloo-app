@@ -2,6 +2,10 @@
     display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
+    
+    
+    /* border: 2px solid green; */
+
   }
   .instagramItem {
     -webkit-box-flex: 0;
@@ -9,7 +13,7 @@
     margin: 0px;
     display: block;
     position: relative;
-    /* border: 2px solid green; */
+    /* border: 2px solid burlywood; */
 
   } 
   .instagramImg {
@@ -23,7 +27,7 @@
     object-fit: cover;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    /* border: 5px solid hsl(172, 85%, 48%); */
+    /* border: 5px solid hsl(0, 0%, 100%); */
 
   }
     /* The overlay effect - lays on top of the container and over the image */
@@ -36,6 +40,7 @@
       background: rgba(0, 0, 0, 0.8); 
       color: #f1f1f1;
       width: 100%;
+
 
       transition: .5s ease;
       color: white;

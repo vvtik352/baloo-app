@@ -3,10 +3,11 @@
   background-color: #15171d;
   z-index: -1;
   color: white;
+  margin: 0;
 }
 
 .App-logo {
-  height: 15vmin;
+  height: 25vmin;
   margin: 10px;
   pointer-events: none;
   /* border: 2px solid #387bff; */
@@ -30,11 +31,11 @@
 .navbar {
   float:right;
   text-align: right;
-  
+  font-size: 2vw;
   font-weight: 600;
   /* border: 5px solid hsl(172, 85%, 48%); */
   margin: 0px;
-  padding: 10px;
+  padding: 40px;
   width: 800px;
 }
 .Header_links {
@@ -59,6 +60,9 @@
   background-color: #15171d;
   /* color: #15171d; */
 
+}
+.about {
+  display: none;
 }
 /* 
 .Header_link:before {
