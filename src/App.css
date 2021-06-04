@@ -7,7 +7,7 @@
 }
 
 .App-logo {
-  height: 25vmin;
+  height: 10vw;
   margin: 10px;
   pointer-events: none;
   /* border: 2px solid #387bff; */
@@ -31,11 +31,11 @@
 .navbar {
   float:right;
   text-align: right;
-  font-size: 2vw;
+  font-size: 14px;
   font-weight: 600;
   /* border: 5px solid hsl(172, 85%, 48%); */
   margin: 0px;
-  padding: 40px;
+  padding: 20px;
   width: 800px;
 }
 .Header_links {
