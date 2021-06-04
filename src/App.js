@@ -1,12 +1,12 @@
 import logo from './BALOO.png';
-import inst_logo from './instagram-ico.svg'
-// import ImgMediaCard from './components/ImgMediaCard/ImgMediaCard'
 
 import './App.css';
 import React, { useContext } from 'react';
 
 
-import InstagramFeed  from './components/Feed/InstagramFeed'
+import InstagramFeed from './components/Feed/InstagramFeed'
+import { Redirect, Route, NavLink } from 'react-router-dom';
+
 
 const token = "IGQVJYWEJFTC1xZAnRBOFpHWTZAXaDNXZAHhuckxWMTB2TndOUWh0TkNiNWV4MjRWYmNUZAUpXQl90TXN3VDBLdVRzWlhhcTBqX2wwQWVpTXZALWm9WSGdFYVdNWlVnNkxmYTFKd0lDRVd3"
 
@@ -16,7 +16,6 @@ class App extends React.Component {
 
   constructor(props) {
     super(props);
-
     this.state = {
       items: [
 
@@ -45,38 +44,33 @@ class App extends React.Component {
   // }
   render() {
     return (
+    
       <div className="App">
-          <header className="App-header" >
+        			<Redirect to="/main" />
+        <header className="App-header" >
           <img src={logo} className="App-logo" alt="logo" />
           <div className="navbar">
-                    <ul className="Header_links">
-                        <li className="Header_link">Наши хвостики</li>
-                        <li className="Header_link">Поддержка</li>
-                        <li className="Header_link">О нас</li>
-                    </ul>
-                </div>
-          </header>
-
+            <ul className="Header_links">
+              <li className="Header_link"><NavLink to="/main">Наши хвостики</NavLink></li>
+              <li className="Header_link"><NavLink to="/support">Поддержка</NavLink></li>
+              <li className="Header_link"><NavLink to="/about">О нас</NavLink></li>
+            </ul>
+          </div>
+        </header>
         <div className="tab_content">
-        <div className="about">
+          
+          <div className="content">
             <h1>
-            Мы команда волонтёров: Аня и Алиса. 
+              Мы команда волонтёров: Аня и Алиса.
             </h1>
             <h3>
-            <p></p>Вместе мы не первый год подбираем и находим дом собакам и кошкам.
-            <p></p> На этом сайте актуальный каталог наших подопечных 
+              <p></p>Вместе мы не первый год подбираем и находим дом собакам и кошкам.
+            <p></p> На этом сайте актуальный каталог наших подопечных
             <p></p>Все животные здоровы, привиты и готовы стать домашними. Звоните и приезжайте знакомиться!
             </h3>
           </div>
           <div class="animal_list_container">
-          <InstagramFeed token={token}/>
-
-          <div class="social">
-            <ul>   
-             <li><img src={logo} width="25"/></li>
-             <li><img src={inst_logo} width="25"/></li>
-            </ul>
-          </div>
+            <InstagramFeed token={token} />
             {/* <ul>
               {
                 Object.keys(this.state.items).map(el =>
