@@ -67,7 +67,7 @@ class App extends React.Component {
           <img src={logo} className="App-logo" alt="logo" />
           <div className="navbar">
             <div className="Header_links">
-              <div className="Header_link" onClick={this.isAnimals}>Наши хвостики</div>
+              {/* <div className="Header_link" onClick={this.isAnimals}>Наши хвостики</div> */}
               <div className="Header_link">Поддержка</div>
               <div className="Header_link" onClick={this.isShowAbout}>О нас</div>
             </div>

@@ -18,6 +18,7 @@
 
   } 
   .instagramImg {
+    box-shadow: 4px 4px 0px rgb(36, 36, 36);
 
     border-radius: 5px;
     display: block;
