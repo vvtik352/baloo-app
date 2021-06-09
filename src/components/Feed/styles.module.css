@@ -43,11 +43,12 @@
       color: #f1f1f1;
       margin: 27px;
       width: 310px;
-      height: 70px;
+      height: 40px;
       padding: 10px;
       transition: .5s ease;
       color: white;
       font-weight: 500;
+      font-size: 14px;
       z-index: 110;
 
       /* font-size: 2vw; */
@@ -91,13 +92,23 @@
   @media (max-width: 480px) {
     
     /* CSS */
-    .instagramItem{
+    .instagramItem > .instagramImg {
       flex: 0 0 calc(100%/2 - 10px);
       margin: 5px;
+      max-width: 250px;
+      max-height: 250px;
+    }
+    .instagramIcon {
+      flex: 0 0 calc(100%/2 - 10px);
+      margin: 5px;
+      max-width: 250px;
+      max-height: 250px;
     }
 
     .overlay {
-      font-size: 20px;
+      font-size: 15px;
+      max-width: 210px;
+      height: 50px;
     }
     
   }
