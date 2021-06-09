@@ -1,6 +1,6 @@
 import logo from './BALOO.png';
 
-import styles from './App.css';
+import  './App.css';
 import React, { useContext } from 'react';
 
 
@@ -15,11 +15,17 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      about:false,
+      animals: true,
+      support: false,
+      about: false,
       items: [
 
       ],
     };
+
+   this.isShowAbout = this.isShowAbout.bind(this)
+   this.isAnimals = this.isAnimals.bind(this)
+   this.isSupport = this.isSupport.bind(this)
   }
   // componentDidMount() {
   //   var that = this
@@ -41,21 +47,34 @@ class App extends React.Component {
   //     // })
   //   })
   // }
+
+  isShowAbout(){
+    this.setState({about: !this.state.about})
+    console.log(this.state.about);
+  }
+  isSupport() {
+    this.setState({support: !this.state.support})
+
+  }
+  isAnimals() {
+    this.setState({animals: !this.state.animals})
+
+  }
   render() {
     return (
       <div className="App">
         <header className="App-header" >
           <img src={logo} className="App-logo" alt="logo" />
           <div className="navbar">
-            <ul className="Header_links">
-              <li className="Header_link">Наши хвостики</li>
-              <li className="Header_link">Поддержка</li>
-              <li className="Header_link" onClick={this.state.about=!this.state.about}>О нас</li>
-            </ul>
+            <div className="Header_links">
+              <div className="Header_link" onClick={this.isAnimals}>Наши хвостики</div>
+              <div className="Header_link">Поддержка</div>
+              <div className="Header_link" onClick={this.isShowAbout}>О нас</div>
+            </div>
           </div>
         </header>
         <div className="tab_content">
-          <div className="about_hide">
+          <div className={this.state.about ?"about_show": "about_hide"}>
             <h1>
               Мы команда волонтёров: Аня и Алиса.
             </h1>
@@ -65,7 +84,7 @@ class App extends React.Component {
             <p></p>Все животные здоровы, привиты и готовы стать домашними. Звоните и приезжайте знакомиться!
             </h3>
           </div>
-          <div class="animals_list">
+          <div className={this.state.animals ?"animals_list" : "animals_list_hide"}>
             <InstagramFeed token={token} />
             {/* <ul>
               {

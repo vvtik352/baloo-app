@@ -14,9 +14,9 @@
   width: 100%;
   background-color: #2c3242;
   color: white;
-  /* border: 3px dashed #ff3849; */
+  /* border:   3px dashed #ff3849; */
   /* font-size: calc(5px + 2vmin); */
-  display: flex;
+  display:flex;
 }
 .App-logo {
   height: 70px;
@@ -31,15 +31,18 @@
   /* border: 3px dashed rgb(255, 112, 17); */
   font-size: 20px;
   font-weight: 600;
-  max-width: 100%;
+  max-width: 500px;
+  float: right;
 }
 .Header_links {
   /* border: 3px dashed rgb(65, 255, 17); */
   cursor: pointer;
+  margin: 25px;
 }
 .Header_link {
   /* border: 3px dashed rgb(65, 255, 17); */
-
+  /* margin: 120px; */
+  /* padding-right: 20px; */
   border-bottom: 3px solid #222738;
   margin: 10px;
   display: inline-table;
@@ -48,7 +51,7 @@
 .Header_link:hover {
   border-bottom: 3px solid #adbffc;
 	transition: all 0.5s ease;
-  font-size: 22px;
+  /* font-size: 19px; */
 
   /* background-color: #15171d; */
   color: #d6d8db;
@@ -57,8 +60,18 @@
 
 .about_hide {
   display: none;
+	transition: all 0.5s ease;
 }
 
 .about_show {
-  display: table;
+  display:block;
+  margin: 10px;
+	transition: all 0.5s ease;
+
+}
+.animals_list{
+  display: block;
+}
+.animals_list_hide{
+  display: none;
 }
