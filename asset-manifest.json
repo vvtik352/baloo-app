@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/baloo-app/static/css/main.de0106be.chunk.css",
-    "main.js": "/baloo-app/static/js/main.233ab216.chunk.js",
-    "main.js.map": "/baloo-app/static/js/main.233ab216.chunk.js.map",
+    "main.css": "/baloo-app/static/css/main.34dfb57c.chunk.css",
+    "main.js": "/baloo-app/static/js/main.2e11a0e8.chunk.js",
+    "main.js.map": "/baloo-app/static/js/main.2e11a0e8.chunk.js.map",
     "runtime-main.js": "/baloo-app/static/js/runtime-main.2442d0d9.js",
     "runtime-main.js.map": "/baloo-app/static/js/runtime-main.2442d0d9.js.map",
     "static/css/2.25a48982.chunk.css": "/baloo-app/static/css/2.25a48982.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.f94964e6.chunk.js.map": "/baloo-app/static/js/3.f94964e6.chunk.js.map",
     "index.html": "/baloo-app/index.html",
     "static/css/2.25a48982.chunk.css.map": "/baloo-app/static/css/2.25a48982.chunk.css.map",
-    "static/css/main.de0106be.chunk.css.map": "/baloo-app/static/css/main.de0106be.chunk.css.map",
+    "static/css/main.34dfb57c.chunk.css.map": "/baloo-app/static/css/main.34dfb57c.chunk.css.map",
     "static/js/2.e5316ff3.chunk.js.LICENSE.txt": "/baloo-app/static/js/2.e5316ff3.chunk.js.LICENSE.txt",
     "static/media/BALOO.d033f429.png": "/baloo-app/static/media/BALOO.d033f429.png"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.2442d0d9.js",
     "static/css/2.25a48982.chunk.css",
     "static/js/2.e5316ff3.chunk.js",
-    "static/css/main.de0106be.chunk.css",
-    "static/js/main.233ab216.chunk.js"
+    "static/css/main.34dfb57c.chunk.css",
+    "static/js/main.2e11a0e8.chunk.js"
   ]
 }
