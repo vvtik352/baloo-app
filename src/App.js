@@ -68,7 +68,7 @@ class App extends React.Component {
           <div className="navbar">
             <div className="Header_links">
               {/* <div className="Header_link" onClick={this.isAnimals}>Наши хвостики</div> */}
-              <div className="Header_link">Поддержка</div>
+              <div className="Header_link" onClick={this.isSupport}>Поддержка</div>
               <div className="Header_link" onClick={this.isShowAbout}>О нас</div>
             </div>
           </div>

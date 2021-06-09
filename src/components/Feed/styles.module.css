@@ -7,10 +7,8 @@
 
   }
   .instagramItem {
-
     width: 350px;
     /* height: 350px; */
-  
     -webkit-box-flex: 0;
     flex: 0 0 calc(100%/6 - 10px);
     display: block;
@@ -18,8 +16,7 @@
 
   } 
   .instagramImg {
-    box-shadow: 4px 4px 0px rgb(36, 36, 36);
-
+    box-shadow: 2px 2px 1px rgb(22, 22, 22);
     border-radius: 5px;
     display: block;
     width: 350px;
@@ -31,30 +28,36 @@
     object-fit: cover;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    /* border: 5px solid hsl(0, 100%, 43%); */
+    /* border: 2px solid hsl(0, 0%, 21%); */
 
   }
-    /* The overlay effect - lays on top of the container and over the image */
     .overlay {
-      
       /* border: 2px solid hsl(172, 85%, 48%); */
       border-bottom: 5px;
+      border-top-right-radius: 10px;
+      box-shadow: -2px 2px 2px rgb(22, 22, 22);
       position: absolute;
       bottom: 0px;
-      background: rgb(0, 0, 0);
-      background: rgba(0, 0, 0, 0.8); 
+      background: #1c202b;
+      /* background: rgb(0, 0, 0); */
+      /* background: rgba(0, 0, 0, 0.8);  */
       color: #f1f1f1;
-      width: 350px;
+      margin: 27px;
+      width: 310px;
       height: 70px;
-
+      padding: 10px;
       transition: .5s ease;
       color: white;
-      font-weight: 300;
+      font-weight: 500;
 
       /* font-size: 2vw; */
       /* text-align: center; */
     
     }
+
+  /* .overlay:hover { 
+      height: 100px;
+  } */
   .instagramIcon {
 
     display: -webkit-box;
@@ -79,7 +82,7 @@
     opacity: 1;
     border-radius: 5px;
     transition: all 0.5s ease;
-    background-color: #00000061;
+    background-color: #1d1d1d61;
   }
   @media (max-width: 480px) {
     

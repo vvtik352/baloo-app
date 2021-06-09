@@ -44,12 +44,6 @@ class InstagramFeed extends Component {
           error
         });
       });
-
-
-
-
-
-
   }
 
   render() {
@@ -86,7 +80,7 @@ class InstagramFeed extends Component {
                     key={index}
                     src={feed.media_url}
                     alt="description" />
-                  <div class={styles.overlay}>{feed.caption.substr(0, 60) + "..."}</div>
+                  <div class={styles.overlay}>{feed.caption.substr(12, 70) + "..."}</div>
                 </div>
                 :
                 <video className={styles.instagramImg} key={index} src={feed.media_url} type="video/mp4"></video>
