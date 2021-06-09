@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/baloo-app/static/css/main.2b0675c5.chunk.css",
-    "main.js": "/baloo-app/static/js/main.17012674.chunk.js",
-    "main.js.map": "/baloo-app/static/js/main.17012674.chunk.js.map",
-    "runtime-main.js": "/baloo-app/static/js/runtime-main.d2e8ed96.js",
-    "runtime-main.js.map": "/baloo-app/static/js/runtime-main.d2e8ed96.js.map",
-    "static/css/2.8ce19d80.chunk.css": "/baloo-app/static/css/2.8ce19d80.chunk.css",
-    "static/js/2.b77dbffc.chunk.js": "/baloo-app/static/js/2.b77dbffc.chunk.js",
-    "static/js/2.b77dbffc.chunk.js.map": "/baloo-app/static/js/2.b77dbffc.chunk.js.map",
-    "static/js/3.7af18be2.chunk.js": "/baloo-app/static/js/3.7af18be2.chunk.js",
-    "static/js/3.7af18be2.chunk.js.map": "/baloo-app/static/js/3.7af18be2.chunk.js.map",
+    "main.css": "/baloo-app/static/css/main.adeadc81.chunk.css",
+    "main.js": "/baloo-app/static/js/main.db7a39d5.chunk.js",
+    "main.js.map": "/baloo-app/static/js/main.db7a39d5.chunk.js.map",
+    "runtime-main.js": "/baloo-app/static/js/runtime-main.2442d0d9.js",
+    "runtime-main.js.map": "/baloo-app/static/js/runtime-main.2442d0d9.js.map",
+    "static/css/2.25a48982.chunk.css": "/baloo-app/static/css/2.25a48982.chunk.css",
+    "static/js/2.e5316ff3.chunk.js": "/baloo-app/static/js/2.e5316ff3.chunk.js",
+    "static/js/2.e5316ff3.chunk.js.map": "/baloo-app/static/js/2.e5316ff3.chunk.js.map",
+    "static/js/3.f94964e6.chunk.js": "/baloo-app/static/js/3.f94964e6.chunk.js",
+    "static/js/3.f94964e6.chunk.js.map": "/baloo-app/static/js/3.f94964e6.chunk.js.map",
     "index.html": "/baloo-app/index.html",
-    "static/css/2.8ce19d80.chunk.css.map": "/baloo-app/static/css/2.8ce19d80.chunk.css.map",
-    "static/css/main.2b0675c5.chunk.css.map": "/baloo-app/static/css/main.2b0675c5.chunk.css.map",
-    "static/js/2.b77dbffc.chunk.js.LICENSE.txt": "/baloo-app/static/js/2.b77dbffc.chunk.js.LICENSE.txt",
+    "static/css/2.25a48982.chunk.css.map": "/baloo-app/static/css/2.25a48982.chunk.css.map",
+    "static/css/main.adeadc81.chunk.css.map": "/baloo-app/static/css/main.adeadc81.chunk.css.map",
+    "static/js/2.e5316ff3.chunk.js.LICENSE.txt": "/baloo-app/static/js/2.e5316ff3.chunk.js.LICENSE.txt",
     "static/media/BALOO.d033f429.png": "/baloo-app/static/media/BALOO.d033f429.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d2e8ed96.js",
-    "static/css/2.8ce19d80.chunk.css",
-    "static/js/2.b77dbffc.chunk.js",
-    "static/css/main.2b0675c5.chunk.css",
-    "static/js/main.17012674.chunk.js"
+    "static/js/runtime-main.2442d0d9.js",
+    "static/css/2.25a48982.chunk.css",
+    "static/js/2.e5316ff3.chunk.js",
+    "static/css/main.adeadc81.chunk.css",
+    "static/js/main.db7a39d5.chunk.js"
   ]
 }
