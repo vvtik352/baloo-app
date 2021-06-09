@@ -19,9 +19,11 @@
   display: flex;
 }
 .App-logo {
-  height: 5em;
+  height: 70px;
   pointer-events: none;
   margin-top: 25px;
+  position: relative;
+  bottom:10px;
   /* border: 2px dashed #387bff; */
 }
 
@@ -53,6 +55,10 @@
 
 }
 
-.content {
+.about_hide {
   display: none;
+}
+
+.about_show {
+  display: table;
 }

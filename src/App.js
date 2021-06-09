@@ -1,12 +1,10 @@
 import logo from './BALOO.png';
 
-import './App.css';
+import styles from './App.css';
 import React, { useContext } from 'react';
 
 
 import InstagramFeed from './components/Feed/InstagramFeed'
-import { Redirect, Route, NavLink } from 'react-router-dom';
-
 
 const token = "IGQVJYWEJFTC1xZAnRBOFpHWTZAXaDNXZAHhuckxWMTB2TndOUWh0TkNiNWV4MjRWYmNUZAUpXQl90TXN3VDBLdVRzWlhhcTBqX2wwQWVpTXZALWm9WSGdFYVdNWlVnNkxmYTFKd0lDRVd3"
 
@@ -17,6 +15,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      about:false,
       items: [
 
       ],
@@ -44,22 +43,19 @@ class App extends React.Component {
   // }
   render() {
     return (
-    
       <div className="App">
-        			<Redirect to="/main" />
         <header className="App-header" >
           <img src={logo} className="App-logo" alt="logo" />
           <div className="navbar">
             <ul className="Header_links">
-              <li className="Header_link"><NavLink to="/main">Наши хвостики</NavLink></li>
-              <li className="Header_link"><NavLink to="/support">Поддержка</NavLink></li>
-              <li className="Header_link"><NavLink to="/about">О нас</NavLink></li>
+              <li className="Header_link">Наши хвостики</li>
+              <li className="Header_link">Поддержка</li>
+              <li className="Header_link" onClick={this.state.about=!this.state.about}>О нас</li>
             </ul>
           </div>
         </header>
         <div className="tab_content">
-          
-          <div className="content">
+          <div className="about_hide">
             <h1>
               Мы команда волонтёров: Аня и Алиса.
             </h1>
@@ -69,7 +65,7 @@ class App extends React.Component {
             <p></p>Все животные здоровы, привиты и готовы стать домашними. Звоните и приезжайте знакомиться!
             </h3>
           </div>
-          <div class="animal_list_container">
+          <div class="animals_list">
             <InstagramFeed token={token} />
             {/* <ul>
               {
@@ -80,6 +76,7 @@ class App extends React.Component {
                 )}
             </ul> */}
           </div>
+
         </div>
       </div>
     );
