@@ -61,21 +61,19 @@ class InstagramFeed extends Component {
         <div className={styles.instagramItems}>
           {feeds.slice(0, this.props.counter).map((feed, index) => (
             <div key={index} className={styles.instagramItem}>
-
               {(feed.media_type === 'IMAGE' || feed.media_type === 'CAROUSEL_ALBUM') ?
                 // <ImgMediaCard avatar={feed.media_url} 
                 //               name="" 
                 //               disc={feed.caption} 
                 //               href={feed.permalink}/>
-
                 <div class={styles.instagramItem}>
                   <a
                     key={index}
                     href={feed.permalink}
                     className="ig-instagram-link"
                     target="_blank"
-                    rel="noreferrer"
-                  >              <div className={styles.instagramIcon}>
+                    rel="noreferrer">
+                    <div className={styles.instagramIcon}>
                       <div className="instagram-count-item">
                         <span className="icon">
                           {/*change your svg icon*/}
@@ -90,7 +88,6 @@ class InstagramFeed extends Component {
                       </div>
                     </div>
                     <div class={styles.overlay}>{feed.caption.substr(12, 70) + "..."}</div>
-
                   </a>
                   <img
                     className={styles.instagramImg}
@@ -100,8 +97,6 @@ class InstagramFeed extends Component {
                 </div>
                 :
                 <video className={styles.instagramImg} key={index} src={feed.media_url} type="video/mp4"></video>
-
-
               }
             </div>
           ))}

@@ -3,15 +3,19 @@
     display: flex;
     flex-wrap: wrap;
   
-    /* border: 2px solid green; */
 
   }
-  .instagramItem {
+  .instagramItem  {
+    /* border: 2px solid green; */
+    /* padding: 30px; */
     width: 350px;
     /* height: 350px; */
+    margin: 10px;
     -webkit-box-flex: 0;
     flex: 0 0 calc(100%/6 - 10px);
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
 
   } 
@@ -21,7 +25,7 @@
     display: block;
     width: 350px;
     height: 350px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     -webkit-transition: .25s;
     transition: .25s;
     -o-object-fit: cover;
@@ -34,16 +38,16 @@
     .overlay {
       /* border: 2px solid hsl(172, 85%, 48%); */
       border-bottom: 5px;
-      border-top-right-radius: 10px;
       box-shadow: -2px 2px 2px rgb(22, 22, 22);
+
       position: absolute;
       bottom: 0px;
       background: rgb(28, 32, 43);
       background: rgba(28, 32, 43, 0.95); 
       color: #f1f1f1;
-      margin: 27px;
-      width: 310px;
-      height: 40px;
+      margin: 0px;
+      width: 330px;
+      height: 50px;
       padding: 10px;
       transition: .5s ease;
       color: white;
@@ -55,10 +59,6 @@
       /* text-align: center; */
     
     }
-
-  .overlay:hover { 
-      height: 100px;
-  }
   .instagramIcon {
 
     display: -webkit-box;
@@ -69,11 +69,11 @@
     align-items: center;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0px;
     width: 350px;
     height: 350px;
     z-index: 100;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 12px;
     color: #fff;
     opacity: 0;
@@ -92,41 +92,39 @@
   @media (max-width: 480px) {
     
     /* CSS */
-    .instagramItem > .instagramImg {
+    .instagramItem  {
       flex: 0 0 calc(100%/2 - 10px);
       margin: 5px;
-      max-width: 250px;
-      max-height: 250px;
+      padding: auto;
+      max-width: 200px;
+      max-height: 200px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .instagramImg {
+      flex: 0 0 calc(100%/2 - 10px);
+
+      /* margin: 5px; */
+      max-width: 200px;
+      max-height: 200px;
     }
     .instagramIcon {
       flex: 0 0 calc(100%/2 - 10px);
-      margin: 5px;
-      max-width: 250px;
-      max-height: 250px;
+      margin: 0px;
+      max-width: 200px;
+      max-height: 200px;
     }
 
     .overlay {
-      font-size: 15px;
-      max-width: 210px;
-      height: 50px;
+      font-size: 12px;
+      /* position:unset; */
+      max-width: 180px;
     }
     
   }
   
-  @media (min-width: 481px) and (max-width: 1767px) {
-    
-    /* CSS */
-    .instagramItem { 
-      /* border: 3px solid green; */
-     
-      flex: 0 -20 calc(100%/3 - 10px);
-      /* margin: 5px; */
-      margin-top: 20px;
-      margin-left: 36px;
-      /* padding-left: 30px; */
-    }
-    
-  }
+ 
 
   .errorMessage{
     text-align: center;

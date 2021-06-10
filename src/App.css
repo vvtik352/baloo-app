@@ -80,12 +80,11 @@
 }
 
 .animals_list{
+  /* border: 2px solid #38db17; */
+  width: 90%;
   display: block;
-
-
-}
-.animals_list_hide{
-  height: 0%;
-  margin: 0px;
-  
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: 20px;
+  padding-left: 3em; */
 }

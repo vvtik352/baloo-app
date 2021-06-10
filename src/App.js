@@ -84,7 +84,7 @@ class App extends React.Component {
             <p></p>Все животные здоровы, привиты и готовы стать домашними. Звоните и приезжайте знакомиться!
             </h3>
           </div>
-          <div className={this.state.animals ?"animals_list" : "animals_list_hide"}>
+          <div className="animals_list">
             <InstagramFeed token={token} />
             {/* <ul>
               {
