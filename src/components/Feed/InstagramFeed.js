@@ -87,7 +87,7 @@ class InstagramFeed extends Component {
                         </span>
                       </div>
                     </div>
-                    <div class={styles.overlay}>{feed.caption.substr(12, 70) + "..."}</div>
+                    <div class={styles.overlay}>{feed.caption ? feed.caption.substr(12, 70) + "..." : ""}</div>
                   </a>
                   <img
                     className={styles.instagramImg}
