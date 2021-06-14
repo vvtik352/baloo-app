@@ -74,6 +74,22 @@ class App extends React.Component {
           </div>
         </header>
         <div className="tab_content">
+          <div className={this.state.support ? "support" : "support_hide"}>
+            <h2>
+            Если Вы хотите помочь животным, представленным на сайте, Вы можете это сделать переводом на карту:
+            </h2>
+            <h1>
+            Карта сб 4274 3200 3107 5230 на Алиса Сергеевна К.
+            </h1>
+            <p>
+            Также всегда будем рады помощи кормом!
+            Связываться для передачи:
+            </p>
+            <p>
+            8 (926)600-20-70 Анна <br/>
+            8 (999)968-07-82 Алиса
+            </p>
+          </div>
           <div className={this.state.about ?"about_show": "about_hide"}>
             <h1>
               Мы команда волонтёров: Аня и Алиса.

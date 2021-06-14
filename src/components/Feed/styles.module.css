@@ -20,7 +20,7 @@
 
   } 
   .instagramImg {
-    box-shadow: 2px 2px 1px rgb(22, 22, 22);
+    box-shadow: 4px 3px 1px #1c202bf2;
     border-radius: 5px;
     display: block;
     width: 350px;
@@ -36,14 +36,15 @@
 
   }
     .overlay {
+      
       /* border: 2px solid hsl(172, 85%, 48%); */
       border-bottom: 5px;
-      box-shadow: -2px 2px 2px rgb(22, 22, 22);
+      /* box-shadow: -2px 2px 2px #1c202bf2; */
 
       position: absolute;
       bottom: 0px;
-      background: rgb(28, 32, 43);
-      background: rgba(28, 32, 43, 0.95); 
+      background: #1c202b;
+      background: #1c202bf2; 
       color: #f1f1f1;
       margin: 0px;
       width: 330px;

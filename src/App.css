@@ -58,6 +58,24 @@
 
 }
 
+.support {
+  background-color:#2c3242;
+  border: 1px solid rgb(136, 136, 136);
+  border-radius: 5px;
+  display:block;
+  margin: 10px;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.support_hide { 
+  transition: 0.5s;
+  max-height: 0%;
+  overflow: hidden;
+  /* display: none; */
+  margin: 0px;
+  font-size: 0px;
+}
 
 .about_show {
   background-color:#2c3242;
