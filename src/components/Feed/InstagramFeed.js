@@ -1,7 +1,17 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import styles from "./styles.module.css";
-import ImgMediaCard from '../Card/ImgMediaCard'
 
+import Description from './Description/Desciption'
+
+// import ImgMediaCard from '../Card/ImgMediaCard'
+
+// function Card(props) {
+//   const [isFullText, setIsFullText] = useState(false)
+
+//   return (
+//     <div className={styles.overlay}>{feed.caption ? feed.caption.substr(12, 70) + "..." : ""}</div>
+//   )
+// }
 
 class InstagramFeed extends Component {
   constructor(props) {
@@ -10,9 +20,17 @@ class InstagramFeed extends Component {
       feeds: [],
       isError: '',
       isLoaded: false,
+      isFullDescr: false
     };
+
+    this.setFull = this.setFull.bind(this)
   }
 
+  setFull() {
+    console.log(this.state.isFullDescr)
+    let tmp = this.state.isFullDescr
+    this.setState({ isFullDescr: !tmp })
+  }
   componentDidMount() {
     let url = `https://graph.instagram.com/me/media?fields=media_count,media_type,permalink,media_url,caption&&access_token=${this.props.token}`;
     fetch(url)
@@ -69,7 +87,7 @@ class InstagramFeed extends Component {
                 <div class={styles.instagramItem}>
                   <a
                     key={index}
-                    href={feed.permalink}
+                    // href={feed.permalink}
                     className="ig-instagram-link"
                     target="_blank"
                     rel="noreferrer">
@@ -87,7 +105,9 @@ class InstagramFeed extends Component {
                         </span>
                       </div>
                     </div>
-                    <div class={styles.overlay}>{feed.caption ? feed.caption.substr(12, 70) + "..." : ""}</div>
+                    <div class={styles.overlay} onClick={this.setFull}>
+                      {feed.caption ? feed.caption.substr(12, 70) + "..." : ""}
+                    </div>
                   </a>
                   <img
                     className={styles.instagramImg}
@@ -98,6 +118,8 @@ class InstagramFeed extends Component {
                 :
                 <video className={styles.instagramImg} key={index} src={feed.media_url} type="video/mp4"></video>
               }
+              {this.state.isFullDescr ? <Description descr={feed.caption} /> : null}
+
             </div>
           ))}
         </div>

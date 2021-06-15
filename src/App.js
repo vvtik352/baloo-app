@@ -4,8 +4,8 @@ import  './App.css';
 import React, { useContext } from 'react';
 
 
-import InstagramFeed from './components/Feed/InstagramFeed'
-
+// import InstagramFeed from './components/Feed/InstagramFeed'
+import UpdatedFeed from './components/Feed/UpdatedFeed'
 const token = "IGQVJYWEJFTC1xZAnRBOFpHWTZAXaDNXZAHhuckxWMTB2TndOUWh0TkNiNWV4MjRWYmNUZAUpXQl90TXN3VDBLdVRzWlhhcTBqX2wwQWVpTXZALWm9WSGdFYVdNWlVnNkxmYTFKd0lDRVd3"
 
 
@@ -79,7 +79,7 @@ class App extends React.Component {
             Если Вы хотите помочь животным, представленным на сайте, Вы можете это сделать переводом на карту:
             </h2>
             <h1>
-            Карта сб 4274 3200 3107 5230 на Алиса Сергеевна К.
+            Карта СБЕР <p>4274 3200 3107 5230</p> на Алиса Сергеевна К.
             </h1>
             <p>
             Также всегда будем рады помощи кормом!
@@ -101,7 +101,7 @@ class App extends React.Component {
             </h3>
           </div>
           <div className="animals_list">
-            <InstagramFeed token={token} />
+            <UpdatedFeed token={token}/>
             {/* <ul>
               {
                 Object.keys(this.state.items).map(el =>

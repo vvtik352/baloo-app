@@ -1,0 +1,178 @@
+.instagramItems {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+  
+
+  }
+  .instagramItem  {
+    /* border: 2px solid green; */
+    /* padding: 30px; */
+    width: 350px;
+    /* height: 350px; */
+    margin: 10px;
+    -webkit-box-flex: 0;
+    flex: 0 0 calc(100%/6 - 10px);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+  } 
+  .instagramImg {
+    box-shadow: 4px 3px 1px #1c202bf2;
+    border-radius: 5px;
+    display: block;
+    width: 350px;
+    height: 350px;
+    /* margin-bottom: 20px; */
+    -webkit-transition: .25s;
+    transition: .25s;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /* border: 2px solid hsl(0, 0%, 21%); */
+
+  }
+    .overlay {
+      cursor: pointer;
+      /* border: 2px solid hsl(172, 85%, 48%); */
+      border-bottom: 5px;
+      /* box-shadow: -2px 2px 2px #1c202bf2; */
+
+      position: absolute;
+      bottom: 0px;
+      background: #1c202b;
+      background: #1c202bf2; 
+      color: #f1f1f1;
+      margin: 0px;
+      width: 330px;
+      height: 50px;
+      padding: 10px;
+      transition: .5s ease;
+      color: white;
+      font-weight: 500;
+      font-size: 14px;
+      z-index: 110;
+
+      /* font-size: 2vw; */
+      /* text-align: center; */
+    
+    }
+
+    .full_overlay {
+      cursor: pointer;
+      /* border: 2px solid hsl(172, 85%, 48%); */
+      border-bottom: 5px;
+      /* box-shadow: -2px 2px 2px #1c202bf2; */
+
+      position: absolute;
+      bottom: 0px;
+      background-color: #1f232e;
+      color: #f1f1f1;
+      margin: 0px;
+      width: 330px;
+      height:50px;
+      padding: 10px;
+      transition: .5s ease;
+      color: white;
+      font-weight: 500;
+      font-size: 14px;
+      z-index: 111;
+      padding-bottom: 290px;
+      transform: translate(0px, -0);
+    }
+  .instagramIcon {
+
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 350px;
+    height: 350px;
+    z-index: 100;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.5s ease;
+
+    /* margin-left: 10px; */
+    /* padding-left: 30px; */
+  }
+  .instagramIcon:hover {
+
+    opacity: 2;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    background-color: #08080861;
+  }
+  @media (max-width: 480px) {
+    
+    /* CSS */
+    .instagramItem  {
+      flex: 0 0 calc(100%/2 - 10px);
+      padding: auto;
+      max-width: 250px;
+      max-height: 250px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .instagramImg {
+      flex: 0 0 calc(100%/2 - 10px);
+
+       max-width: 250px;
+       max-height: 250px;
+    }
+    .instagramIcon {
+      flex: 0 0 calc(100%/2 - 10px);
+      margin: 0px;
+      max-width: 250px;
+      max-height: 200px;
+    }
+
+    .overlay {
+      font-size: 10px;
+      height: 30px;
+      max-width: 230px;
+    }
+
+    .full_overlay {
+      font-size: 10px;
+      height: 1px;
+      max-width: 230px;
+    }
+    
+  }
+  
+ 
+
+  .errorMessage{
+    text-align: center;
+    color: red;
+    font-size: 18px;
+  }
+
+  /* .container {
+      border: 5px solid hsl(172, 85%, 48%);
+
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+  } */
+  
+  /* Make the image to responsive */
+  .image {
+    
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
